@@ -1,26 +1,47 @@
 import {useEffect, useState} from "react";
+import {useRouter} from "next/router";
 import Layout from "../src/layouts/Layout";
 import Header1 from "../src/layouts/headers/Header1";
 import Footer1 from "../src/layouts/footers/Footer1";
 
 const EmployeeInfo = () =>{
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const router = useRouter();
 
     useEffect(() => {
         //check if employee is logged in
         const loggedIn = sessionStorage.getItem("isLoggedIn");
         if (loggedIn === "true"){
             setIsLoggedIn(true);
+            setIsLoading(false);
         }else{
             //Redirect to home page
-            window.location.href = "/";
+            router.push("/");
         }
-    }, []);
+    }, [router]);
 
     const handleLogout = () =>{
         sessionStorage.removeItem("isLoggedIn");
-        window.location.href="/";
+        router.push("/");
     };
+
+    if(isLoading){
+      return (
+        <Layout noHeader noFooter>
+          <Header1 />
+            <div style={{ 
+              minHeight: '60vh', 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center' 
+            }}>
+              <h2>Loading...</h2>
+            </div>
+          <Footer1 />
+      </Layout>
+      )
+    }
 
     if (!isLoggedIn){
         return null;
