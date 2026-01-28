@@ -1,0 +1,758 @@
+/*-----------------------------------------------------------------------------------
+    MYSTIQ LABS - BRAND CUSTOMIZATION (WHITE BACKGROUND VERSION)
+    
+    Brand Colors:
+    - Oxford Blue (Primary): #14213D
+    - Copper/Gold (Accent): #C9A961
+    - Cool Gray (Secondary): #E5E5E5
+----------------------------------------------------------------------------------*/
+
+/* Override root CSS variables with Mystiq Labs colors */
+:root {
+  --primary-color: #14213D;
+  --accent-color: #C9A961;
+  --secondary-color: #E5E5E5;
+  
+  /* Override existing template colors */
+  --red-dark: #14213D;
+  --blue-light: #C9A961;
+  --blue-dark: #14213D;
+  --purple-blue: #14213D;
+  --yellow-dark: #C9A961;
+  --orange-dark: #C9A961;
+  
+  /* Text colors - back to original */
+  --heading: #14213D;
+  --text-color: #616161;
+  
+  /* Background colors */
+  --light-gray: #FAFAFA;
+  --black-dark: #14213D;
+}
+
+/* =================================================
+   HEADER HEIGHT REDUCTION - MAIN FIX
+   ================================================= */
+
+/* Top bar - reduced height */
+.header-top-bar-one {
+  padding: 3px 0 !important;
+  min-height: 28px !important;
+  line-height: 1.2 !important;
+  font-size: 13px !important;
+}
+
+.header-top-bar-one .top-left ul li {
+  font-size: 12px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.header-top-bar-one .top-right {
+  font-size: 12px !important;
+}
+
+.header-top-bar-one .top-right span.phone {
+  line-height: 1.4 !important;
+}
+
+/* Navigation bar - CRITICAL HEIGHT REDUCTION */
+.header-navigation {
+  padding: 6px 0 !important;
+  min-height: 55px !important;
+}
+
+.primary-menu {
+  min-height: 55px !important;
+  height: 55px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Logo - smaller size */
+.site-branding {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.site-logo {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.site-logo img {
+  max-height: 38px !important;
+  height: 38px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+/* Navigation menu - reduced spacing */
+.nav-menu {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav-menu nav > ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav-menu nav > ul > li {
+  padding: 0 15px !important;
+  margin: 0 !important;
+  line-height: 55px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nav-menu nav > ul > li > a {
+  padding: 0 !important;
+  line-height: 1 !important;
+  font-size: 14px !important;
+  display: inline-block !important;
+  color: #ffffff !important;
+}
+
+.nav-menu nav > ul > li > ul {
+  top: 55px !important;
+}
+
+.nav-menu {
+  margin-left: 100px !important;
+}
+
+/* Right side elements */
+.header-right-nav {
+  display: flex !important;
+  align-items: center !important;
+  height: 55px !important;
+}
+
+.header-right-nav ul {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header-right-nav ul li {
+  padding: 0 !important;
+  margin-left: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.header-right-nav .main-btn {
+  padding: 8px 22px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  height: auto !important;
+}
+
+.header-right-nav .nice-select {
+  height: auto !important;
+  line-height: 1 !important;
+  padding: 5px 10px !important;
+}
+
+/* background for header nav bar */
+.header-navigation {
+  background-color: #14213D !important;
+}
+
+.primary-menu .nav-menu nav > ul > li > a,
+.header-navigation .nav-menu nav > ul > li > a {
+  color: #ffffff !important;
+}
+
+.nav-menu nav > ul > li > a:hover {
+  color: #C9A961 !important;
+}
+
+/* =================================================
+   PRIMARY BUTTONS
+   ================================================= */
+.main-btn,
+.btn-red-dark,
+.primary-btn {
+  background-color: #14213D !important;
+  border-color: #14213D !important;
+  color: #ffffff !important;
+}
+
+.main-btn:hover,
+.btn-red-dark:hover,
+.primary-btn:hover {
+  background-color: #C9A961 !important;
+  border-color: #C9A961 !important;
+  color: #ffffff !important;
+}
+
+/* =================================================
+   NAVIGATION LINKS
+   ================================================= */
+.navbar-nav .nav-link,
+.nav-menu nav > ul > li > a {
+  color: #14213D !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.nav-menu nav > ul > li > a:hover {
+  color: #C9A961 !important;
+}
+
+/* =================================================
+   HEADINGS
+   ================================================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #14213D !important;
+}
+
+/* =================================================
+   ACCENT ELEMENTS
+   ================================================= */
+.sub-title,
+.text-underline,
+.red-dark {
+  color: #C9A961 !important;
+}
+
+/* =================================================
+   LINKS
+   ================================================= */
+a:hover {
+  color: #C9A961 !important;
+}
+
+/* =================================================
+   ICONS
+   ================================================= */
+.icon i,
+.flaticon::before {
+  color: #C9A961 !important;
+}
+
+/* =================================================
+   FOOTER
+   ================================================= */
+.footer-area {
+  background-color: #14213D !important;
+  color: #E5E5E5 !important;
+}
+
+.footer-area a {
+  color: #E5E5E5 !important;
+}
+
+.footer-area a:hover {
+  color: #C9A961 !important;
+}
+
+.footer-logo img {
+  max-height: 50px !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.9 !important;
+}
+
+/* =================================================
+   FORMS
+   ================================================= */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #C9A961 !important;
+  box-shadow: 0 0 0 0.2rem rgba(201, 169, 97, 0.25) !important;
+}
+
+/* =================================================
+   MOBILE RESPONSIVE
+   ================================================= */
+@media (max-width: 991px) {
+  .header-top-bar-one {
+    padding: 5px 0 !important;
+  }
+  
+  .primary-menu {
+    min-height: 50px !important;
+    height: 50px !important;
+  }
+  
+  .site-logo img {
+    max-height: 32px !important;
+    height: 32px !important;
+  }
+  
+  .navbar-toggler {
+    border-color: #C9A961 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top-bar-one {
+    display: none !important;
+  }
+  
+  .header-navigation {
+    padding: 5px 0 !important;
+  }
+  
+  .primary-menu {
+    min-height: 45px !important;
+    height: 45px !important;
+  }
+  
+  .site-logo img {
+    max-height: 30px !important;
+    height: 30px !important;
+  }
+}
+
+/* =================================================
+   STICKY HEADER FIX
+   ================================================= */
+.sticky-active .header-navigation {
+  padding: 5px 0 !important;
+}
+
+.sticky-active .primary-menu {
+  min-height: 50px !important;
+  height: 50px !important;
+}
+
+.sticky-active .site-logo img {
+  max-height: 35px !important;
+}
+
+/* =================================================
+   UTILITY CLASSES
+   ================================================= */
+.bg-primary {
+  background-color: #14213D !important;
+}
+
+.bg-accent {
+  background-color: #C9A961 !important;
+}
+
+.text-primary {
+  color: #14213D !important;
+}
+
+.text-accent {
+  color: #C9A961 !important;
+}
+
+
+
+/* =================================================
+   HERO SECTION STYLES
+   ================================================= */
+
+/* Hero heading - white text for dark overlay */
+.hero-content h1 {
+  color: #C9A961 !important;
+  font-size: 48px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Hero subtitle - gold accent */
+.hero-content .sub-title {
+  color: #C9A961 !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+
+/* Hero buttons */
+.hero-content .button {
+  margin-top: 30px !important;
+}
+
+
+
+
+
+/* =================================================
+   HERO IMAGE OVERLAY FIX - Remove Dark Overlay
+   ================================================= */
+
+/* Remove or lighten the dark overlay on hero images */
+.hero-area::before,
+.hero-area::after,
+.single-slider::before,
+.single-slider::after,
+.bg_cover::before,
+.bg_cover::after {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.hero-wrapper-one::before,
+.hero-wrapper-one::after {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* Remove any overlays on the hero section */
+.hero-area .overlay,
+.single-slider .overlay {
+  display: none !important;
+}
+
+/* Make hero images brighter and sharper */
+.single-slider {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  filter: brightness(1.1) contrast(1.05) !important;
+}
+
+.bg_cover {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative !important;
+}
+
+/* Ensure hero content text is readable on bright images */
+.hero-content {
+  position: relative !important;
+  z-index: 10 !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7) !important;
+  padding: 90px 0 100px 0 !important;
+}
+
+.hero-content h1 {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8) !important;
+  color: #E5E5E5 !important;
+  font-weight: 700 !important;
+}
+
+.hero-content .sub-title {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7) !important;
+  color: #C9A961 !important;
+  background-color: rgba(20, 33, 61, 0.6) !important;
+  padding: 5px 15px !important;
+  display: inline-block !important;
+  border-radius: 3px !important;
+}
+
+.hero-content .button .main-btn {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Optional: Add subtle gradient only at bottom for text readability */
+.single-slider::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 200px !important;
+  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 100%) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+.hero-content {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+
+/*align logo and menu items */
+.site-branding {
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 14px !important;
+}
+
+.site-logo img {
+  margin-top: -3px !important;
+}
+
+/* =================================================
+   EMPLOYEE LOGIN MODAL
+   ================================================= */
+
+.login-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  animation: fadeIn 0.3s ease;
+}
+
+.employee-login-modal {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.employee-login-modal.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.employee-login-modal .modal-content {
+  padding: 20px;
+}
+
+.employee-login-modal .modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #C9A961;
+  position: relative;
+}
+
+.employee-login-modal .modal-header h3 {
+  color: #14213D;
+  margin: 0;
+  font-size: 24px;
+}
+
+.employee-login-modal .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #14213D;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.employee-login-modal .close-btn:hover {
+  color: #C9A961;
+  transform: rotate(90deg);
+}
+
+.employee-login-modal .main-btn {
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.employee-login-modal button.main-btn {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none !important;
+}
+
+.employee-login-modal .form-group {
+  margin-bottom: 20px;
+}
+
+.employee-login-modal .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #14213D;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.employee-login-modal .form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.employee-login-modal .form-control:focus {
+  border-color: #C9A961;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.1);
+}
+
+.employee-login-modal .btn-block {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.employee-login-modal .error-message {
+  background: #ffe6e6;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ffcdd2;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .employee-login-modal {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* =================================================
+   EMPLOYEE INFO PAGE
+   ================================================= */
+
+.employee-info-section {
+  min-height: 60vh;
+}
+
+.employee-info-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.employee-info-card .card-header {
+  background: #14213D;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-info-card .card-header h2 {
+  color: white !important;
+  margin: 0;
+}
+
+.employee-info-card .card-body {
+  padding: 40px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.info-item label {
+  display: block;
+  color: #C9A961;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.info-item p {
+  color: #14213D;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.data-table-section {
+  margin-top: 40px;
+}
+
+.data-table-section h3 {
+  color: #14213D !important;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #C9A961;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.employee-table thead {
+  background: #14213D;
+}
+
+.employee-table th {
+  color: white !important;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.employee-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #616161 !important;
+}
+
+.employee-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.status-active {
+  background: #4caf50;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-completed {
+  background: #C9A961;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .employee-table {
+    font-size: 14px;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 10px;
+  }
+}
