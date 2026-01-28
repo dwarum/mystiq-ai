@@ -10,7 +10,7 @@ const EmployeeInfo = () =>{
         //check if employee is logged in
         const loggedIn = sessionStorage.getItem("isLoggedIn");
         if (loggedIn === "true"){
-            setIsLoggedIn("true");
+            setIsLoggedIn(true);
         }else{
             //Redirect to home page
             window.location.href = "/";
