@@ -27,26 +27,12 @@ const Index = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-8">
                   <div className="hero-content text-center">
-                    <span className="sub-title">
-                      Beyond Consulting. True Partnership.
+                    <span className="sub-title text-underline">
+                      Beyond Consulting. Dedicated Teams.
                     </span>
                     <h1>
                       Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
                     </h1>
-                    {/* <ul className="button">
-                      <li>
-                        <Link href="/about">
-                          <a className="main-btn btn-red-dark">
-                            get started now
-                          </a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/service-details">
-                          <a className="main-btn btn-white">explore more</a>
-                        </Link>
-                      </li>
-                    </ul> */}
                   </div>
                 </div>
               </div>
@@ -63,11 +49,8 @@ const Index = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-6">
                   <div className="section-title text-center mb-45 wow fadeInUp">
-                    {/* <span className="sub-title red-dark text-underline">
-                      great journey for it solutions
-                    </span> */}
                     <h2 className="text-uppercase">
-                      specializes in building Services
+                      The Mystiq Advantage
                     </h2>
                   </div>
                 </div>
@@ -80,11 +63,10 @@ const Index = () => {
                     </div>
                     <div className="text">
                       <h3 className="title text-underline">
-                        Professional Service
+                        End-to-End Ownership
                       </h3>
                       <p>
-                        Sedut perspicias unde omnis natus error sit voluptatem
-                        accusanti remqu laudantium totam rem aperiam
+                        We don't just provide consultants—we deliver complete solutions. From initial architecture to final deployment, our cross-functional teams own every phase of your project's success.
                       </p>
                     </div>
                   </div>
@@ -95,10 +77,9 @@ const Index = () => {
                       <i className="flaticon-social-care" />
                     </div>
                     <div className="text">
-                      <h3 className="title text-underline">Experience Team</h3>
+                      <h3 className="title text-underline">Expert Team Assembly</h3>
                       <p>
-                        Sedut perspicias unde omnis natus error sit voluptatem
-                        accusanti remqu laudantium totam rem aperiam
+                        Purpose-built teams with deep expertise in AI/ML, blockchain, cloud modernization, and cybersecurity. We match the right specialists to your specific challenge, not generic contractors.
                       </p>
                     </div>
                   </div>
@@ -110,11 +91,10 @@ const Index = () => {
                     </div>
                     <div className="text">
                       <h3 className="title text-underline">
-                        Best IT Solutions
+                        Proven Implementation
                       </h3>
                       <p>
-                        Sedut perspicias unde omnis natus error sit voluptatem
-                        accusanti remqu laudantium totam rem aperiam
+                        We bridge the gap between strategy and execution. Our teams stay with you through deployment and beyond, ensuring your solution delivers measurable business value.
                       </p>
                     </div>
                   </div>
@@ -141,11 +121,14 @@ const Index = () => {
                     About Mystiq Labs
                   </span>
                   <h2 className="text-transform">
-                    Strategic Consulting & Business Solutions
+                    Solutions, Not Just Resources
                   </h2>
                 </div>
                 <p>
-                  Mystiq Labs delivers strategic consulting and innovative business solutions that transform organizational challenges into competitive advantages. With deep expertise across technology, operations, and strategic planning, we partner with enterprises to architect scalable solutions that drive measurable results. Our approach combines analytical rigor with creative problem-solving to unlock sustainable growth and operational excellence.
+                  Mystiq Labs was founded on a simple insight: businesses don't need more individual consultants—they need dedicated teams that take full ownership of implementation. We specialize in AI/ML solutions, agentic AI systems, blockchain innovation, cloud modernization, and cybersecurity for forward-thinking organizations in finance, AI startups, and DeFi.
+                </p>
+                <p>
+                  Our approach is different. Instead of staffing your team with contractors, we provide integrated, cross-functional squads that architect, develop, and deploy complete solutions. From day one to deployment and beyond, we're partners in your success—not just advisors on the sideline.
                 </p>
                 <Link href="/about">
                   <a className="main-btn">learn more us</a>
@@ -163,13 +146,11 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="section-title text-center mb-50 wow fadeInUp">
                 <span className="sub-title red-dark text-underline">
-                  Our popular services
+                  Core Services
                 </span>
-                <h2>Best Professional IT Solutions</h2>
+                <h2>Enterprise Solutions That Drive Results</h2>
                 <p>
-                  Sed perspiciatis unde omniste natus voluptate accusantiuy
-                  doloremque laudantium totam aperm eaque quae ainvtore
-                  veritatis architecto
+                  We deliver specialized expertise across the technologies shaping the future of finance, AI, and blockchain industries.
                 </p>
               </div>
             </div>
@@ -183,12 +164,11 @@ const Index = () => {
                 <div className="text">
                   <h4 className="title">
                     <Link href="/service-details">
-                      <a>Infrastructure</a>
+                      <a>AI & Machine Learning</a>
                     </Link>
                   </h4>
                   <p>
-                    But I must explain to you how all this mistaken ideofe
-                    denouncing pleasure
+                    From intelligent automation to agentic AI systems, we architect and deploy ML solutions that transform data into competitive advantage.
                   </p>
                 </div>
               </div>
@@ -201,12 +181,11 @@ const Index = () => {
                 <div className="text">
                   <h4 className="title">
                     <Link href="/service-details">
-                      <a>IT Engineering</a>
+                      <a>Blockchain & DeFi</a>
                     </Link>
                   </h4>
                   <p>
-                    But I must explain to you how all this mistaken ideofe
-                    denouncing pleasure
+                    Build secure, scalable blockchain solutions and decentralized finance platforms with our specialized cross-functional teams.
                   </p>
                 </div>
               </div>
@@ -219,12 +198,11 @@ const Index = () => {
                 <div className="text">
                   <h4 className="title">
                     <Link href="/service-details">
-                      <a>cyber security</a>
+                      <a>Cloud Modernization</a>
                     </Link>
                   </h4>
                   <p>
-                    But I must explain to you how all this mistaken ideofe
-                    denouncing pleasure
+                    Migrate, optimize, and secure your infrastructure with end-to-end cloud transformation strategies tailored to your business.
                   </p>
                 </div>
               </div>
@@ -237,12 +215,11 @@ const Index = () => {
                 <div className="text">
                   <h4 className="title">
                     <Link href="/service-details">
-                      <a>Apps Development</a>
+                      <a>Cybersecurity</a>
                     </Link>
                   </h4>
                   <p>
-                    But I must explain to you how all this mistaken ideofe
-                    denouncing pleasure
+                    Protect your digital assets with comprehensive security solutions—from architecture design to threat monitoring and compliance.
                   </p>
                 </div>
               </div>
@@ -251,241 +228,6 @@ const Index = () => {
         </div>
       </section>
       {/*====== End Services Section ======*/}
-      {/*====== Start Counter Section ======*/}
-      <section className="fancy-counter-two pt-100 pb-50">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="counter-item-two mb-50 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-teamwork" />
-                </div>
-                <div className="text">
-                  <h2 className="number">
-                    <Counter end={2563} />+
-                  </h2>
-                  <p>Happy Customer</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="counter-item-two mb-50 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-verification" />
-                </div>
-                <div className="text">
-                  <h2 className="number">
-                    <Counter end={8965} />+
-                  </h2>
-                  <p>Star Work Reviews</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="counter-item-two mb-50 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-trophy-1" />
-                </div>
-                <div className="text">
-                  <h2 className="number">
-                    <Counter end={9856} />+
-                  </h2>
-                  <p>Project Complate</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="counter-item-two mb-50 wow fadeInUp">
-                <div className="icon">
-                  <i className="flaticon-medal" />
-                </div>
-                <div className="text">
-                  <h2 className="number">
-                    <Counter end={7856} />+
-                  </h2>
-                  <p>Win Of Awards</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Counter Section ======*/}
-      {/*====== Start Projects Section ======*/}
-      <section className="portfolio-section pt-115 pb-85">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section-title text-center mb-50 wow fadeInUp">
-                <span className="sub-title red-dark text-underline">
-                  latest Case Studies
-                </span>
-                <h2>
-                  over 15 years, customers have Come to IT solutions.
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="row portfolio-grid-three">
-                <div className="col-lg-4 col-md-6 col-sm-12 cat-1">
-                  <div className="portfolio-block-one wow fadeInUp">
-                    <div className="portfolio-img">
-                      <img
-                        src="assets/images/projects/project-2.jpg"
-                        alt="project image"
-                      />
-                      <div className="hover-overlay">
-                        <div className="icon">
-                          <Link href="/project-details">
-                            <a>
-                              <i className="far fa-arrow-right" />
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="portfolio-content">
-                      <span className="cat">
-                        <Link href="/project-1">
-                          <a>product design</a>
-                        </Link>
-                      </span>
-                      <h4 className="title">
-                        <Link href="/project-details">
-                          <a>
-                            Deploying Experts from OtherS Projects to Fill Skill
-                            Gaps
-                          </a>
-                        </Link>
-                      </h4>
-                      <p>
-                        Quis autem veleum sure reprehenderit quiine voluptate
-                        velit esse quam molestiae
-                      </p>
-                      <Link href="/project-details">
-                        <a className="portfolio-link">
-                          continue reading <i className="far fa-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-12 cat-2">
-                  <div className="portfolio-block-one wow fadeInUp">
-                    <div className="portfolio-img">
-                      <img
-                        src="assets/images/projects/project-3.jpg"
-                        alt="project image"
-                      />
-                      <div className="hover-overlay">
-                        <div className="icon">
-                          <Link href="/project-details">
-                            <a>
-                              <i className="far fa-arrow-right" />
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="portfolio-content">
-                      <span className="cat">
-                        <Link href="/project-1">
-                          <a>product design</a>
-                        </Link>
-                      </span>
-                      <h4 className="title">
-                        <Link href="/project-details">
-                          <a>
-                            Providing Expertise to Keep Critical Systems
-                            Operational
-                          </a>
-                        </Link>
-                      </h4>
-                      <p>
-                        Quis autem veleum sure reprehenderit quiine voluptate
-                        velit esse quam molestiae
-                      </p>
-                      <Link href="/project-details">
-                        <a className="portfolio-link">
-                          continue reading <i className="far fa-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 col-sm-12 cat-3">
-                  <div className="portfolio-block-one wow fadeInUp">
-                    <div className="portfolio-img">
-                      <img
-                        src="assets/images/projects/project-1.jpg"
-                        alt="project image"
-                      />
-                      <div className="hover-overlay">
-                        <div className="icon">
-                          <Link href="/project-details">
-                            <a>
-                              <i className="far fa-arrow-right" />
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="portfolio-content">
-                      <span className="cat">
-                        <Link href="/project-1">
-                          <a>product design</a>
-                        </Link>
-                      </span>
-                      <h4 className="title">
-                        <Link href="/project-details">
-                          <a>
-                            STP Geospatial Engineers Helped Secure the 
-                            Borders
-                          </a>
-                        </Link>
-                      </h4>
-                      <p>
-                        Quis autem veleum sure reprehenderit quiine voluptate
-                        velit esse quam molestiae
-                      </p>
-                      <Link href="/project-details">
-                        <a className="portfolio-link">
-                          continue reading <i className="far fa-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Projects Section ======*/}
-      {/*====== Start Contact Section ======*/}
-      <section className="fancy-contact-section">
-        <div className="container">
-          <div className="contact-inner-two bg_cover">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-lg-8">
-                <div className="text text-center mb-30 wow fadeInUp">
-                  <h2>Stay Connected With Cutting Edge IT</h2>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="button text-center text-lg-right mb-30 wow fadeInUp">
-                  <Link href="/contact">
-                    <a className="main-btn btn-red-dark">get A Quote</a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Contact Section ======*/}
       <Footer1 />
     </Layout>
   );

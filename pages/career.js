@@ -4,178 +4,189 @@ import Layout from "../src/layouts/Layout";
 const Career = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Careers"} />
-      <section className="features-area features-style-four pt-130">
+      <PageBanner pageName={"Careers"} pageTitle={"Careers at Mystiq Labs"} />
+      
+      {/*====== Start Why Work Section ======*/}
+      <section className="about-section pt-130 pb-80">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="text-wrapper">
-                <div className="section-title mb-30 wow fadeInUp">
-                  <h2>Benifits You Receive</h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="section-title text-center mb-50 wow fadeInUp">
+                <span className="sub-title red-dark text-underline">
+                  Join Our Team
+                </span>
+                <h2>Why Work at Mystiq Labs</h2>
+              </div>
+              <div className="content-wrapper wow fadeInUp">
+                <p className="mb-20">
+                  At Mystiq Labs, we're building the future of enterprise technology through dedicated teams that own outcomes, not just deliverables. We seek professionals who thrive on complex challenges, value end-to-end ownership, and want to work on projects that matter—from AI/ML implementations to blockchain infrastructure, cloud modernization to cybersecurity architecture.
+                </p>
+                <p className="mb-20">
+                  Our team members are experts in their domains who understand that transformative technology requires both deep technical skill and collaborative execution. You'll work alongside specialists across disciplines, contributing to solutions that drive real business impact for organizations at the forefront of finance, AI, and decentralized technology.
+                </p>
+                <p>
+                  If you're looking for a place where your expertise is valued, your growth is prioritized, and your work creates lasting value, Mystiq Labs offers the environment and opportunities to build a meaningful career.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Why Work Section ======*/}
+
+      {/*====== Start Benefits Section ======*/}
+      <section className="features-area light-gray-bg pt-120 pb-80">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="section-title text-center mb-50 wow fadeInUp">
+                <span className="sub-title red-dark text-underline">
+                  Benefits & Perks
+                </span>
+                <h2>What We Offer</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6 col-md-12">
+              <div className="block-style-one d-flex mb-40 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-computer" />
+                </div>
+                <div className="text">
+                  <h3 className="title text-underline">
+                    Remote-First Culture
+                  </h3>
                   <p>
-                    Sed perspiciatis omnis natus voluptate accusantie doloremque
-                    laudantium totam rem aperiam eaque quaea
+                    We operate as a fully remote organization, giving you the flexibility to work from anywhere while maintaining strong collaboration and communication. Our distributed model attracts top talent regardless of location and enables you to design a work environment that maximizes your productivity and work-life balance.
                   </p>
-                </div>
-                <div className="block-style-twentyOne d-flex wow fadeInUp">
-                  <div className="icon purple-blue-bg">
-                    <i className="flaticon-shield" />
-                  </div>
-                  <div className="text">
-                    <h4>Security &amp; Job Guarantee</h4>
-                    <p>
-                      Sed perspiciatis unde omnis voluptate accusantie
-                      doloremque laudantium totam rem aperiam
-                    </p>
-                  </div>
-                </div>
-                <div className="block-style-twentyOne d-flex wow fadeInUp">
-                  <div className="icon blue-light-bg">
-                    <i className="flaticon-bonus" />
-                  </div>
-                  <div className="text">
-                    <h4>Project Bonuse &amp; Increments</h4>
-                    <p>
-                      Quis autem vel eum iure reprehenderin eavolutate esse quam
-                      nihil molestiae consequatur
-                    </p>
-                  </div>
-                </div>
-                <div className="block-style-twentyOne d-flex wow fadeInUp">
-                  <div className="icon purple-blue-bg">
-                    <i className="flaticon-support" />
-                  </div>
-                  <div className="text">
-                    <h4>Friendly Enviornments</h4>
-                    <p>
-                      On the other hand denounce with righteousnation and
-                      dislike men who are so beguiled
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="img-holder-box">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="img-holder border-top-left-radius wow fadeInLeft">
-                      <img
-                        src="assets/images/features/img-7.jpg"
-                        alt="Features Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="img-holder wow fadeInUp">
-                      <img
-                        src="assets/images/features/img-8.jpg"
-                        alt="Features Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="img-holder wow fadeInDown">
-                      <img
-                        src="assets/images/features/img-9.jpg"
-                        alt="Features Image"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="img-holder border-bottom-right-radius mt-30 wow fadeInRight">
-                      <img
-                        src="assets/images/features/img-10.jpg"
-                        alt="Features Image"
-                      />
-                    </div>
-                  </div>
+            <div className="col-lg-6 col-md-12">
+              <div className="block-style-one d-flex mb-40 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-shield" />
+                </div>
+                <div className="text">
+                  <h3 className="title text-underline">
+                    Comprehensive Health Coverage
+                  </h3>
+                  <p>
+                    Your health and well-being are priorities. We provide comprehensive health insurance coverage to ensure you and your family have access to quality medical care without financial stress.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12">
+              <div className="block-style-one d-flex mb-40 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-verification" />
+                </div>
+                <div className="text">
+                  <h3 className="title text-underline">
+                    Professional Development
+                  </h3>
+                  <p>
+                    Technology evolves rapidly, and we invest in keeping your skills current. Our learning and development budget supports certifications, courses, conferences, and other educational resources that advance your expertise and career trajectory.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12">
+              <div className="block-style-one d-flex mb-40 wow fadeInUp">
+                <div className="icon">
+                  <i className="flaticon-compliant" />
+                </div>
+                <div className="text">
+                  <h3 className="title text-underline">
+                    Home Office Setup
+                  </h3>
+                  <p>
+                    We provide support for creating a productive home workspace. Whether it's equipment, ergonomic furniture, or technology upgrades, we ensure you have the tools needed to do your best work from your chosen location.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*====== End Features Section ======*/}
-      {/*====== Start Features Section ======*/}
-      <section className="features-area pt-120 pb-100">
+      {/*====== End Benefits Section ======*/}
+
+      {/*====== Start How We Hire Section ======*/}
+      <section className="features-area pt-120 pb-90">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section-title text-center mb-55 wow fadeInUp">
+            <div className="col-lg-8">
+              <div className="section-title text-center mb-50 wow fadeInUp">
+                <span className="sub-title red-dark text-underline">
+                  Our Process
+                </span>
                 <h2>How We Hire</h2>
-                <p>
-                  Sed perspiciatis omnis natus voluptate accusantie doloremque
-                  laudantium totam rem aperiam eaque quaea
-                </p>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-6 col-sm-12">
               <div
-                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-30 wow fadeInUp"
+                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-40 wow fadeInUp"
                 data-wow-delay=".2s"
               >
                 <div className="icon">
                   <i className="fal fa-briefcase" />
                 </div>
                 <div className="text">
-                  <h3>Apply Jobs</h3>
+                  <h3>Apply</h3>
                   <p>
-                    Quis autem veleum iure reprehenderit quiinea volup tavelit
-                    esse quam nihe
+                    Submit your resume and relevant portfolio or work samples to careers@mystiq.ai. We review all applications carefully, looking for technical depth, problem-solving ability, and alignment with our values.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-sm-12">
               <div
-                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-30 wow fadeInUp"
+                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-40 wow fadeInUp"
                 data-wow-delay=".3s"
               >
                 <div className="icon">
-                  <i className="fal fa-atom-alt" />
+                  <i className="fal fa-comments" />
                 </div>
                 <div className="text">
-                  <h3>Interview</h3>
+                  <h3>Initial Interview</h3>
                   <p>
-                    Quis autem veleum iure reprehenderit quiinea volup tavelit
-                    esse quam nihe
+                    Selected candidates participate in an initial conversation with our team to discuss your experience, technical background, and career objectives. This is an opportunity for both parties to assess mutual fit.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-sm-12">
               <div
-                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-30 wow fadeInUp"
+                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-40 wow fadeInUp"
                 data-wow-delay=".4s"
               >
                 <div className="icon">
-                  <i className="fal fa-bell" />
+                  <i className="fal fa-code" />
                 </div>
                 <div className="text">
-                  <h3>Notifications</h3>
+                  <h3>Technical Assessment</h3>
                   <p>
-                    Quis autem veleum iure reprehenderit quiinea volup tavelit
-                    esse quam nihe
+                    Depending on the role, you'll complete a technical assessment or case study that reflects real challenges our teams solve. We value practical problem-solving over theoretical knowledge.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-sm-12">
               <div
-                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-30 wow fadeInUp"
+                className="block-style-twentyTwo animate-icon d-flex align-items-start mb-40 wow fadeInUp"
                 data-wow-delay=".5s"
               >
                 <div className="icon">
-                  <i className="fal fa-headphones-alt" />
+                  <i className="fal fa-handshake" />
                 </div>
                 <div className="text">
-                  <h3>Contact</h3>
+                  <h3>Final Discussion & Offer</h3>
                   <p>
-                    Quis autem veleum iure reprehenderit quiinea volup tavelit
-                    esse quam nihe
+                    Final candidates meet with leadership to discuss team dynamics, project opportunities, and compensation. If there's strong alignment, we extend an offer and welcome you to Mystiq Labs.
                   </p>
                 </div>
               </div>
@@ -183,218 +194,42 @@ const Career = () => {
           </div>
         </div>
       </section>
-      {/*====== End Features Section ======*/}
-      {/*====== Start Job Section ======*/}
-      <section className="job-area job-style-one light-gray-bg pb-130 pt-130">
+      {/*====== End How We Hire Section ======*/}
+
+      {/*====== Start Join Team Section ======*/}
+      <section className="cta-section light-gray-bg pt-120 pb-120">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section-title text-center mb-55 wow fadeInUp">
-                <h2>What Jobs We Are Hiring</h2>
-                <p>
-                  Sed perspiciatis omnis natus voluptate accusantie doloremque
-                  laudantium totam rem aperiam eaque quaea
+            <div className="col-lg-8">
+              <div className="cta-content-box text-center wow fadeInUp">
+                <div className="section-title mb-40">
+                  <span className="sub-title red-dark text-underline">
+                    Get In Touch
+                  </span>
+                  <h2>Ready to Join Our Team?</h2>
+                </div>
+                <p className="mb-30">
+                  We're always interested in connecting with talented professionals who share our commitment to excellence and ownership. While we may not have specific openings listed at this time, we encourage you to reach out if you believe your expertise aligns with our mission.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-1.png" alt="" />
+                <div className="contact-info">
+                  <p className="mb-20">
+                    <strong>Send your resume and a brief introduction to:</strong>
+                  </p>
+                  <h4>
+                    <a href="mailto:careers@mystiq.ai" style={{ color: '#1a1a1a' }}>
+                      careers@mystiq.ai
+                    </a>
+                  </h4>
+                  <p className="mt-20">
+                    We review all inquiries and will contact you if there's a potential fit for current or upcoming opportunities.
+                  </p>
                 </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-2.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-3.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".5s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-4.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-5.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".7s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-6.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".8s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-7.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-              <div
-                className="single-job-item text-center mb-30 wow fadeInUp"
-                data-wow-delay=".9s"
-              >
-                <div className="icon">
-                  <img src="assets/images/icon/c-8.png" alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="title">
-                    <a href="#">Senior Design</a>
-                  </h3>
-                  <span className="salary">
-                    <i className="far fa-tags" />
-                    $250 - 859/ monthly
-                  </span>
-                  <p>Quis autem veleum reprehe nderit quin voluptate</p>
-                  <a href="#" className="main-btn btn-purple">
-                    apply now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="button text-center mt-30" data-wow-delay=".8s">
-                <a href="#" className="main-btn btn-blue-light text-underline">
-                  View more jobs
-                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/*====== End Join Team Section ======*/}
     </Layout>
   );
 };
