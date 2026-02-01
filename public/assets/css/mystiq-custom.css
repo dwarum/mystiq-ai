@@ -637,6 +637,7 @@ select:focus {
 
 .employee-info-section {
   min-height: 60vh;
+  padding-top: 80px !important; /* Reduced from default ~130px */
 }
 
 .employee-info-card {
@@ -724,24 +725,6 @@ select:focus {
   background: #f9f9f9;
 }
 
-.status-active {
-  background: #4caf50;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.status-completed {
-  background: #C9A961;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
 @media (max-width: 768px) {
   .info-grid {
     grid-template-columns: 1fr;
@@ -756,3 +739,608 @@ select:focus {
     padding: 10px;
   }
 }
+
+/* =================================================
+   SMALL BUTTON STYLE
+   ================================================= */
+
+.btn-small {
+  padding: 8px 20px !important;
+  font-size: 14px !important;
+  min-width: auto !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+/* =================================================
+   Payslips table - spread columns
+   ================================================= */
+
+.employee-table.payslips-table {
+  table-layout: fixed;
+}
+
+.employee-table.payslips-table thead tr th:nth-child(1),
+.employee-table.payslips-table tbody tr td:nth-child(1) {
+  width: 25%;
+  text-align: left;
+}
+
+.employee-table.payslips-table thead tr th:nth-child(2),
+.employee-table.payslips-table tbody tr td:nth-child(2) {
+  width: 50%; /* Empty spacer column */
+}
+
+.employee-table.payslips-table thead tr th:nth-child(3),
+.employee-table.payslips-table tbody tr td:nth-child(3) {
+  width: 25%;
+  text-align: right;
+}
+
+
+/* =================================================
+   ACCORDION STYLES
+   ================================================= */
+
+.accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.accordion-header:hover {
+  background: #e9ecef;
+}
+
+.accordion-header h3 {
+  margin: 0 !important;
+  color: #14213D !important;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+.accordion-header i {
+  color: #C9A961;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 30px;
+}
+
+.accordion-content.open {
+  max-height: 2000px;
+  padding: 30px;
+}
+
+/* Remove top margin from first element in accordion */
+.accordion-content.open > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* =================================================
+   LEAVE & TIME-OFF SECTION
+   ================================================= */
+
+/* ETO Policy Banner */
+.eto-policy-banner {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-left: 4px solid #C9A961;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.eto-policy-banner i {
+  color: #C9A961;
+  font-size: 24px;
+}
+
+.eto-policy-banner span {
+  color: #14213D;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ETO Stats Grid */
+.eto-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.eto-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.eto-total {
+  border-top: 4px solid #14213D;
+}
+
+.eto-used {
+  border-top: 4px solid #e67e22;
+}
+
+.eto-available {
+  border-top: 4px solid #C9A961;
+}
+
+.eto-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.eto-label {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.eto-value {
+  color: #14213D;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Holiday Section */
+.holiday-section {
+  margin-bottom: 30px;
+}
+
+.holiday-section h4 {
+  color: #14213D !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 20px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.holiday-section h4 i {
+  color: #C9A961;
+}
+
+.holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.holiday-table thead {
+  background: #14213D;
+}
+
+.holiday-table th {
+  color: white !important;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.holiday-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333 !important;
+  font-size: 14px;
+}
+
+.holiday-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.holiday-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.holiday-emoji {
+  margin-right: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .eto-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .holiday-table {
+    font-size: 13px;
+  }
+  
+  .holiday-table th,
+  .holiday-table td {
+    padding: 10px;
+  }
+}
+
+/* =================================================
+   EMPLOYEE PROFILE - (Horizontal Label:Value)
+   ================================================= */
+
+.employee-profile-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.employee-photo-container {
+  flex-shrink: 0;
+}
+
+.employee-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.employee-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Info List - Horizontal (Label: Value) */
+.info-list-horizontal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.info-label {
+  color: #C9A961;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.info-value {
+  color: #14213D;
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .employee-profile-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .employee-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .info-list-horizontal {
+    width: 100%;
+  }
+  
+  .info-row {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .info-label {
+    min-width: auto;
+  }
+}
+
+/* =================================================
+   PERFORMANCE REVIEW SECTION
+   ================================================= */
+ 
+   /* Review Header */
+.review-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #C9A961;
+}
+
+.review-header-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review-label {
+  color: #C9A961;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.review-value {
+  color: #14213D;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* =================================================
+   PERFORMANCE REVIEW - TWO CARD LAYOUT
+   ================================================= */
+
+/* Two Card Container */
+.performance-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* LEFT CARD - Categories */
+.performance-categories-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #C9A961;
+}
+
+.performance-categories-card .card-title {
+  color: #14213D !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 25px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.category-row:last-child {
+  border-bottom: none;
+}
+
+.category-name {
+  color: #14213D;
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+  
+}
+
+.category-rating-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.category-rating-number {
+  color: #14213D;
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: center;
+}
+
+.category-rating-text {
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 180px;
+}
+
+/* RIGHT CARD - Overall Rating */
+.overall-rating-card {
+  background: linear-gradient(135deg, #14213D 0%, #1a2a4d 100%);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(20, 33, 61, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overall-card-content {
+  text-align: center;
+  color: white;
+}
+
+.overall-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.overall-value {
+  font-size: 56px;
+  font-weight: 700;
+  color: #C9A961;
+  margin: 15px 0;
+  line-height: 1;
+}
+
+.overall-status {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #C9A961;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .performance-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .overall-value {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .performance-categories-card,
+  .overall-rating-card {
+    padding: 20px;
+  }
+  
+  .category-rating-text {
+    font-size: 11px;
+    min-width: 140px;
+  }
+  
+  .overall-value {
+    font-size: 40px;
+  }
+}
+
+/* Manager Comments Section */
+.manager-comments-section {
+  margin-top: 30px;
+}
+
+.manager-comments-section h4 {
+  color: #14213D !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manager-comments-section h4 i {
+  color: #C9A961;
+}
+
+.manager-comments-box {
+  background: #f8f9fa;
+  border-left: 4px solid #C9A961;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* Download Review Button */
+.review-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download-review-btn {
+  background: linear-gradient(135deg, #C9A961 0%, #b8935a 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+}
+
+.download-review-btn:hover {
+  background: linear-gradient(135deg, #14213D 0%, #1a2a4d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 33, 61, 0.4);
+}
+
+.download-review-btn i {
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-header {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .performance-item-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .overall-score-box {
+    min-width: auto;
+    padding: 25px 30px;
+  }
+  
+  .overall-value {
+    font-size: 36px;
+  }
+}
+

@@ -27,11 +27,11 @@ const Index = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-8">
                   <div className="hero-content text-center">
-                    <span className="sub-title text-underline">
-                      Strategic Business Solutions
+                    <span className="sub-title">
+                      Beyond Consulting. True Partnership.
                     </span>
                     <h1>
-                      Architecting, developing and deploying enterprise IT solutions
+                      Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
                     </h1>
                     {/* <ul className="button">
                       <li>

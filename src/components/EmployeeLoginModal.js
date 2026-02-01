@@ -7,8 +7,8 @@ const EmployeeLoginModal = ({show, onClose}) => {
     const [error, setError] = useState("");
 
     //hardcoded creds
-    const VALID_EMAIL = "43911@mystiq.ai"
-    const VALID_PASSWORD = "mystiq2026"
+    const VALID_EMAIL = "43991@mystiq.ai"
+    const VALID_PASSWORD = "HelloWorld12!@"
 
     const onHandleSubmit = (e) => {
         e.preventDefault();
@@ -51,7 +51,7 @@ const EmployeeLoginModal = ({show, onClose}) => {
                        <input 
                             type="email"
                             className="form-control"
-                            placeholder="Enter your email"
+                            placeholder="employeeID@mystiq.ai"
                             value={email}
                             onChange = {(e)=> setEmail(e.target.value)}
                             required
