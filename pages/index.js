@@ -12,35 +12,56 @@ const Index = () => {
     <Layout noHeader noFooter>
       <Header1 />
       {/*====== Start Hero Section ======*/}
-      <section className="hero-area">
-        <div className="hero-wrapper-one">
-          <div
-            className="single-slider banner-slide-2 bg_cover"
-            style={{
-              backgroundImage: "url(assets/images/hero/hero-slider-1_2.jpg)",
-              minHeight: "600px",
-              display: "flex",
-              alignItems: "center"
-            }}
-          >
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-8">
-                  <div className="hero-content text-center">
-                    <span className="sub-title text-underline">
-                      Beyond Consulting. Dedicated Teams.
-                    </span>
-                    <h1>
-                      Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
-                    </h1>
-                  </div>
-                </div>
-              </div>
+<section className="hero-area">
+  <div className="hero-wrapper-one">
+    <div
+      className="single-slider banner-slide-2 bg_cover"
+      style={{
+        backgroundImage: "url(assets/images/hero/hero-home.jpg)",
+        minHeight: "600px",
+        display: "flex",
+        alignItems: "center",
+        position: "relative"
+      }}
+    >
+      {/* Light Navy Gradient - Only at top to connect with nav */}
+      <div style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "linear-gradient(to bottom, rgba(26, 35, 64, 0.5) 0%, rgba(26, 35, 64, 0.15) 30%, transparent 60%)",
+        zIndex: 1
+      }}></div>
+      
+      <div className="container" style={{ position: "relative", zIndex: 2 }}>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="hero-content text-center">
+              <span className="sub-title text-underline">
+                Beyond Consulting. Dedicated Teams.
+              </span>
+              <h1>
+                Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
+              </h1>
             </div>
           </div>
         </div>
-      </section>
-      {/*====== End Hero Section ======*/}
+      </div>
+    </div>
+  </div>
+  
+  {/* Smooth Transition Section - Bridges to white content */}
+  <div style={{
+    height: "100px",
+    background: "linear-gradient(to bottom, rgba(139, 117, 94, 0.15) 0%, rgba(255, 255, 255, 1) 100%)",
+    marginTop: "-100px",
+    position: "relative",
+    zIndex: 0
+  }}></div>
+</section>
+{/*====== End Hero Section ======*/}
       {/*====== Start Features Section ======*/}
       <section className="fancy-features">
         <div className="continer-fluid p-0">
@@ -111,7 +132,11 @@ const Index = () => {
           <div className="row">
             <div className="col-lg-7">
               <div className="about-img-box mb-50 wow fadeInLeft">
-                <img src="assets/images/about/about-1.jpg" alt="About image" />
+                <img src="assets/images/about/about-team.jpg" alt="About image" style={{ 
+                  width: '100%', 
+                  height: '650px',  // Adjust this value to your preference
+                  objectFit: 'cover' 
+                }} />
               </div>
             </div>
             <div className="col-lg-5">
@@ -131,7 +156,7 @@ const Index = () => {
                   Our approach is different. Instead of staffing your team with contractors, we provide integrated, cross-functional squads that architect, develop, and deploy complete solutions. From day one to deployment and beyond, we're partners in your success—not just advisors on the sideline.
                 </p>
                 <Link href="/about">
-                  <a className="main-btn">learn more us</a>
+                  <a className="main-btn">learn more</a>
                 </Link>
               </div>
             </div>

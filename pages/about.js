@@ -14,6 +14,9 @@ const About = () => {
             <div className="col-lg-10">
               <div className="about-content-box text-center mb-50 wow fadeInUp">
                 <div className="section-title mb-30">
+                  <span className="sub-title red-dark text-underline">
+                  Our Story
+                </span>
                   <h2>Who We Are</h2>
                 </div>
                 <p className="mb-20">

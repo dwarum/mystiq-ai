@@ -1,173 +1,128 @@
 import Link from "next/link";
+
 const Footer1 = ({ bg, className, logo }) => {
   return (
     <footer
       className={`${
-        className ? className : "footer-area footer-default black-bg footer-map"
+        className ? className : "footer-area footer-default black-bg"
       }`}
     >
       <div className="container">
-        <div className="footer-widget pt-165 pb-35">
+        <div className="footer-widget pt-100 pb-35">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div
-                className="widget about-widget mb-40 wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <div className="logo mb-35">
-                  <Link href="/">
-                    <a>
-                      <img
-                        src={`assets/images/logo/logo-${logo ? logo : 2}.png`}
-                        alt="Theme Logo"
-                      />
-                    </a>
-                  </Link>
-                </div>
-                <div className="about-content">
-                  <h4 className="text-underline">
-                    Don’t Hesited to Conatct With Our Experites
-                  </h4>
-                  <ul>
-                    <li>
-                      <i className="far fa-envelope" />
-                      <span>
-                        <a href="mailto:hotline@gmail.com">hotline@gmail.com</a>
-                      </span>
-                    </li>
-                    <li>
-                      <i className="far fa-map-marker-alt" />
-                      <span>55 Main Street, 2nd Block, USA</span>
-                    </li>
-                    <li>
-                      <i className="far fa-phone" />
-                      <span>
-                        <a href="tel:+012(345)67899">+012 (345) 67 899</a>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            {/* Column 1: Company */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div
                 className="widget footer-nav-widget mb-40 wow fadeInUp"
                 data-wow-delay=".3s"
               >
-                <h4 className="widget-title text-underline">Best Services</h4>
-                <ul className="footer-nav list-style-dot">
+                <h4 className="widget-title text-underline">Company</h4>
+                <ul className="footer-nav">
                   <li>
-                    <a href="#">Web &amp; IT Consulting</a>
+                    <Link href="/about">
+                      <a>About Us</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Cyber Security Solutions</a>
+                    <Link href="/service-1">
+                      <a>Services</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Software Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Enginering</a>
-                  </li>
-                  <li>
-                    <a href="#">Project Management</a>
-                  </li>
-                  <li>
-                    <a href="#">Security Solutions</a>
+                    <Link href="/career">
+                      <a>Careers</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
+
+            {/* Column 2: Services */}
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div
+                className="widget footer-nav-widget mb-40 wow fadeInUp"
+                data-wow-delay=".2s"
+              >
+                <h4 className="widget-title text-underline">Our Services</h4>
+                <ul className="footer-nav">
+                  <li>
+                    <Link href="/service-1">
+                      <a>AI & Machine Learning</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service-1">
+                      <a>Blockchain & DeFi</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service-1">
+                      <a>Cloud Modernization</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/service-1">
+                      <a>Cybersecurity</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 3: Industries */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div
                 className="widget footer-nav-widget mb-40 wow fadeInUp"
                 data-wow-delay=".4s"
               >
-                <h4 className="widget-title text-underline">IT Company</h4>
-                <ul className="footer-nav list-style-dot">
+                <h4 className="widget-title text-underline">Industries We Serve</h4>
+                <ul className="footer-nav">
                   <li>
-                    <a href="#">About Company</a>
+                    <span>Financial Services</span>
                   </li>
                   <li>
-                    <a href="#">Latest News &amp; Blog</a>
+                    <span>AI Startups</span>
                   </li>
                   <li>
-                    <a href="#">Professional Members</a>
+                    <span>Blockchain & DeFi</span>
                   </li>
                   <li>
-                    <a href="#">Our Achievment</a>
-                  </li>
-                  <li>
-                    <a href="#">Company Journey</a>
-                  </li>
-                  <li>
-                    <a href="#">Meet Out Teams</a>
+                    <span>Enterprise Technology</span>
                   </li>
                 </ul>
               </div>
             </div>
+            {/* Column 4: Contact */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div
                 className="widget footer-nav-widget mb-40 wow fadeInUp"
                 data-wow-delay=".5s"
               >
-                <h4 className="widget-title text-underline">Our Support</h4>
-                <ul className="footer-nav list-style-dot">
+                <h4 className="widget-title text-underline">Contact Us</h4>
+                <ul className="footer-nav">
                   <li>
-                    <a href="#">Premium Support</a>
+                    <i className="far fa-envelope" />
+                    <a href="mailto:info@mystiq.ai">info@mystiq.ai</a>
                   </li>
-                  <li>
-                    <a href="#">Need a Career ?</a>
-                  </li>
-                  <li>
-                    <a href="#">Help &amp; FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#">Pricing and plans</a>
-                  </li>
-                  <li>
-                    <a href="#">Cookies Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy Policy</a>
+                  <li style={{ marginTop: '10px' }}>
+                    5600 S Quebec St Ste <br/>
+                    Greenwood Village, CO 80111
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Footer Copyright */}
         <div className="footer-copyright">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-6">
               <div className="text">
                 <p>
-                  Copyright © {new Date().getFullYear()} MunTech. All Right
-                  Reserved
+                  Copyright © {new Date().getFullYear()} Mystiq Labs. All Rights Reserved
                 </p>
               </div>
-            </div>
-            <div className="col-md-4">
-              <ul className="social-link float-md-right float-sm-none">
-                <li>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -175,4 +130,5 @@ const Footer1 = ({ bg, className, logo }) => {
     </footer>
   );
 };
+
 export default Footer1;

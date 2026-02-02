@@ -2,11 +2,10 @@ import niceSelect from "niceselectwithsabuj";
 import React, { Fragment, useEffect } from "react";
 import BackToTop from "../components/BackToTop";
 import ImageView from "../components/ImageView";
-import Newsletter from "../components/Newsletter";
 import VideoPopup from "../components/VideoPopup";
 import { animation, stickyNav } from "../utils";
-import Footer from "./footers/Footer";
-import Header from "./headers/Header";
+import Footer1 from "./footers/Footer1";
+import Header1 from "./headers/Header1";
 
 const Layout = ({ children, noHeader, noFooter }) => {
   useEffect(() => {
@@ -25,12 +24,11 @@ const Layout = ({ children, noHeader, noFooter }) => {
     <Fragment>
       <ImageView />
       <VideoPopup />
-      {!noHeader && <Header />}
+      {!noHeader && <Header1 />}
       {children}
       {!noFooter && (
         <Fragment>
-          <Newsletter />
-          <Footer />
+          <Footer1 />
         </Fragment>
       )}
       <BackToTop />
