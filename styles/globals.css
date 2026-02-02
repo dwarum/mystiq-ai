@@ -9,6 +9,7 @@
 @import "../public/assets/css/mystiq-custom.css";
 @import "./mgfpop.css";
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -190,6 +191,133 @@ html {
   width: 0 !important;
 }
 
-/* .noUi-handle.noUi-handle-lower {
-  left: 0 !important;
-} */
+/* ===== RESPONSIVE HEADER FIX ===== */
+
+/* Desktop header - show on large screens */
+.theme-header.d-xl-block.d-none {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .theme-header.d-xl-block.d-none {
+    display: block !important;
+  }
+  
+  .header-navigation.breakpoint-on {
+    display: none !important;
+  }
+}
+
+/* ===== MOBILE MENU - COMPLETE FIX ===== */
+@media (max-width: 1199px) {
+  /* Hide desktop header */
+  .theme-header.d-xl-block.d-none {
+    display: none !important;
+  }
+  
+  /* Show mobile header */
+  .header-navigation.breakpoint-on.d-block.d-xl-none {
+    display: block !important;
+  }
+  
+  /* Mobile menu container - COMPLETELY HIDDEN by default */
+  .header-navigation.breakpoint-on .nav-menu {
+    position: fixed !important;
+    left: -100% !important;
+    top: 0 !important;
+    width: 280px !important;
+    height: 100vh !important;
+    background: #14213d !important;
+    z-index: 999999 !important;
+    transition: left 0.3s ease !important;
+    overflow-y: auto !important;
+    padding: 80px 30px 30px 30px !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
+  /* Mobile menu - VISIBLE when toggled */
+  .header-navigation.breakpoint-on .nav-menu.menu-on {
+    left: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Close button - only visible when menu is open */
+  .header-navigation.breakpoint-on .navbar-close {
+    display: none !important;
+  }
+  
+  .header-navigation.breakpoint-on .nav-menu.menu-on .navbar-close {
+    display: block !important;
+    position: absolute !important;
+    top: 25px !important;
+    right: 25px !important;
+    font-size: 28px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+  }
+  
+  /* Main menu - VERTICAL layout */
+  .header-navigation.breakpoint-on .main-menu {
+    display: block !important;
+  }
+  
+  .header-navigation.breakpoint-on .main-menu ul {
+    display: flex !important;
+    flex-direction: column !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .header-navigation.breakpoint-on .main-menu ul li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .header-navigation.breakpoint-on .main-menu ul li a {
+    display: block !important;
+    width: 100% !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+    text-decoration: none !important;
+  }
+  
+  /* Hide search */
+  .header-navigation.breakpoint-on .nav-search {
+    display: none !important;
+  }
+  
+  /* Hamburger icon styling */
+  .header-navigation.breakpoint-on .navbar-toggler {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    cursor: pointer !important;
+  }
+  
+  .header-navigation.breakpoint-on .navbar-toggler span {
+    width: 28px !important;
+    height: 3px !important;
+    background: #fff !important;
+    display: block !important;
+  }
+  
+  /* Overlay backdrop when menu is open */
+  .header-navigation.breakpoint-on .nav-menu.menu-on::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 280px !important;
+    width: calc(100vw - 280px) !important;
+    height: 100vh !important;
+    background: rgba(0,0,0,0.5) !important;
+    z-index: -1 !important;
+  }
+}
