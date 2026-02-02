@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
           href="assets/images/favicon.ico"
           type="image/png"
         />
-        <title>Mystiq Labs - Strategic Consulting & Business Solutions</title>
+        <title>Mystiq Labs - Strategic Technology Solutions</title>
       </Head>
       <PreLoader />
       <Component {...pageProps} />
