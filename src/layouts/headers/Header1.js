@@ -21,53 +21,10 @@ const Header1 = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="top-left">
-                  {/* <ul>
-                    <li>
-                      <span>
-                        <i className="far fa-map-marker-alt" />
-                        5600 S Quebec St Ste 109A, Greenwood Village, CO 80111
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        <i className="far fa-envelope" />
-                        <a href="mailto:info@mystiqabs.com">info@mystiqabs.com</a>
-                      </span>
-                    </li>
-                  </ul> */}
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="top-right d-flex align-items-center">
-                  {/* <span className="phone">
-                    <i className="far fa-phone" />
-                    <a href="tel:+1 (720) 555-0100">+012 (345) 67 89</a>
-                  </span>
-                  <ul className="social-link">
-                    <li>
-                      <span className="title">Follow Us</span>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube" />
-                      </a>
-                    </li>
-                  </ul> */}
                 </div>
               </div>
             </div>
