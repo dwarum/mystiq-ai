@@ -467,7 +467,6 @@ select:focus {
   z-index: 10 !important;
 }
 
-
 /*align logo and menu items */
 .site-branding {
   display: flex !important;

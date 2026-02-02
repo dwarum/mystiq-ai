@@ -1,8 +1,7 @@
 import niceSelect from "niceselectwithsabuj";
-import React, { Fragment, useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import BackToTop from "../components/BackToTop";
 import ImageView from "../components/ImageView";
-import VideoPopup from "../components/VideoPopup";
 import { animation, stickyNav } from "../utils";
 import Footer1 from "./footers/Footer1";
 import Header1 from "./headers/Header1";
@@ -23,7 +22,6 @@ const Layout = ({ children, noHeader, noFooter }) => {
   return (
     <Fragment>
       <ImageView />
-      <VideoPopup />
       {!noHeader && <Header1 />}
       {children}
       {!noFooter && (

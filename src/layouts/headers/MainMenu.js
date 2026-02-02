@@ -23,18 +23,6 @@ const MainMenu = ({ search, setShow }) => {
             <a>Careers</a>
           </Link>
         </li>
-        {/* {!search && (
-          <li className="search-item">
-            <a
-              href="#"
-              data-toggle="modal"
-              data-target="#search-modal"
-              onClick={() => setShow()}
-            >
-              <i className="fas fa-search" />
-            </a>
-          </li>
-        )} */}
       </ul>
     </nav>
   );

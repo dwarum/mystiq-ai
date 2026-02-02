@@ -19,12 +19,17 @@ const Footer1 = ({ bg, className, logo }) => {
                 <h4 className="widget-title text-underline">Company</h4>
                 <ul className="footer-nav">
                   <li>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/about">
                       <a>About Us</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service-1">
+                    <Link href="/service">
                       <a>Services</a>
                     </Link>
                   </li>
@@ -46,22 +51,22 @@ const Footer1 = ({ bg, className, logo }) => {
                 <h4 className="widget-title text-underline">Our Services</h4>
                 <ul className="footer-nav">
                   <li>
-                    <Link href="/service-1">
+                    <Link href="/service#ai-ml">
                       <a>AI & Machine Learning</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service-1">
+                    <Link href="/service#blockchain">
                       <a>Blockchain & DeFi</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service-1">
+                    <Link href="/service#cloud">
                       <a>Cloud Modernization</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service-1">
+                    <Link href="/service#cybersecurity">
                       <a>Cybersecurity</a>
                     </Link>
                   </li>

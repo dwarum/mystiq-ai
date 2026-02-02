@@ -1,8 +1,4 @@
 import Link from "next/link";
-import React from "react";
-import { Nav, Tab } from "react-bootstrap";
-import Counter from "../src/components/Counter";
-import Newsletter from "../src/components/Newsletter";
 import Footer1 from "../src/layouts/footers/Footer1";
 import Header1 from "../src/layouts/headers/Header1";
 import Layout from "../src/layouts/Layout";
@@ -12,55 +8,55 @@ const Index = () => {
     <Layout noHeader noFooter>
       <Header1 />
       {/*====== Start Hero Section ======*/}
-<section className="hero-area">
-  <div className="hero-wrapper-one">
-    <div
-      className="single-slider banner-slide-2 bg_cover"
-      style={{
-        backgroundImage: "url(assets/images/hero/hero-home.jpg)",
-        minHeight: "600px",
-        display: "flex",
-        alignItems: "center",
-        position: "relative"
-      }}
-    >
-      {/* Light Navy Gradient - Only at top to connect with nav */}
-      <div style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: "linear-gradient(to bottom, rgba(26, 35, 64, 0.5) 0%, rgba(26, 35, 64, 0.15) 30%, transparent 60%)",
-        zIndex: 1
-      }}></div>
-      
-      <div className="container" style={{ position: "relative", zIndex: 2 }}>
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div className="hero-content text-center">
-              <span className="sub-title text-underline">
-                Beyond Consulting. Dedicated Teams.
-              </span>
-              <h1>
-                Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
-              </h1>
+      <section className="hero-area">
+        <div className="hero-wrapper-one">
+          <div
+            className="single-slider banner-slide-2 bg_cover hero-home-mobile"
+            style={{
+              backgroundImage: "url(assets/images/hero/hero-home.jpg)",
+              minHeight: "600px",
+              display: "flex",
+              alignItems: "center",
+              position: "relative"
+            }}
+          >
+            {/* Light Navy Gradient - Only at top to connect with nav */}
+            <div style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: "linear-gradient(to bottom, rgba(26, 35, 64, 0.5) 0%, rgba(26, 35, 64, 0.15) 30%, transparent 60%)",
+              zIndex: 1
+            }}></div>
+            
+            <div className="container" style={{ position: "relative", zIndex: 2 }}>
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div className="hero-content text-center">
+                    <span className="sub-title text-underline">
+                      Beyond Consulting. Dedicated Teams.
+                    </span>
+                    <h1>
+                      Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
+                    </h1>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  {/* Smooth Transition Section - Bridges to white content */}
-  <div style={{
-    height: "100px",
-    background: "linear-gradient(to bottom, rgba(139, 117, 94, 0.15) 0%, rgba(255, 255, 255, 1) 100%)",
-    marginTop: "-100px",
-    position: "relative",
-    zIndex: 0
-  }}></div>
-</section>
+        
+        {/* Smooth Transition Section - Bridges to white content */}
+        <div style={{
+          height: "100px",
+          background: "linear-gradient(to bottom, rgba(139, 117, 94, 0.15) 0%, rgba(255, 255, 255, 1) 100%)",
+          marginTop: "-100px",
+          position: "relative",
+          zIndex: 0
+        }}></div>
+      </section>
 {/*====== End Hero Section ======*/}
       {/*====== Start Features Section ======*/}
       <section className="fancy-features">

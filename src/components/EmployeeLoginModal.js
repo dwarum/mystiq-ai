@@ -10,7 +10,7 @@ const EmployeeLoginModal = ({show, onClose}) => {
     // const VALID_EMAIL = "43991@mystiq.ai"
     // const VALID_PASSWORD = "HelloWorld12!@"
 
-    const VALID_EMAIL = "bala"
+    const VALID_EMAIL = "bala@bala.com"
     const VALID_PASSWORD = "bala"
 
     const onHandleSubmit = (e) => {

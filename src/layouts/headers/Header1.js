@@ -1,6 +1,5 @@
 import Link from "next/link";
-import React, { Fragment, useState } from "react";
-import SearchModal from "../../components/SearchModal";
+import { Fragment, useState } from "react";
 import MobileHeader from "../MobileHeader";
 import MainMenu from "./MainMenu";
 import EmployeeLoginModal from "../../components/EmployeeLoginModal";
@@ -10,10 +9,6 @@ const Header1 = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
   return (
     <Fragment>
-      <SearchModal
-        show={showSearchModal}
-        setShow={() => setShowSearchModal(false)}
-      />
       <header className="theme-header d-xl-block d-none">
         {/* header top */}
         <div className="header-top-bar header-top-bar-one">

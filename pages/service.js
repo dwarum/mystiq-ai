@@ -36,7 +36,7 @@ const Service1 = () => {
       {/*====== End Intro Section ======*/}
 
       {/*====== Start AI & Machine Learning Section ======*/}
-      <section className="service-details-section light-gray-bg pt-120 pb-80">
+      <section id="ai-ml" className="service-details-section light-gray-bg pt-120 pb-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -80,7 +80,7 @@ const Service1 = () => {
       {/*====== End AI & Machine Learning Section ======*/}
 
       {/*====== Start Blockchain & DeFi Section ======*/}
-      <section className="service-details-section pt-120 pb-80">
+      <section id="blockchain" className="service-details-section pt-120 pb-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -124,7 +124,7 @@ const Service1 = () => {
       {/*====== End Blockchain & DeFi Section ======*/}
 
       {/*====== Start Cloud Modernization Section ======*/}
-      <section className="service-details-section light-gray-bg pt-120 pb-80">
+      <section id="cloud" className="service-details-section light-gray-bg pt-120 pb-80">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -168,7 +168,7 @@ const Service1 = () => {
       {/*====== End Cloud Modernization Section ======*/}
 
       {/*====== Start Cybersecurity Section ======*/}
-      <section className="service-details-section pt-120 pb-120">
+      <section id="cybersecurity" className="service-details-section pt-120 pb-120">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
