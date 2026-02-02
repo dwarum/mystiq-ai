@@ -7,8 +7,11 @@ const EmployeeLoginModal = ({show, onClose}) => {
     const [error, setError] = useState("");
 
     //hardcoded creds
-    const VALID_EMAIL = "43991@mystiq.ai"
-    const VALID_PASSWORD = "HelloWorld12!@"
+    // const VALID_EMAIL = "43991@mystiq.ai"
+    // const VALID_PASSWORD = "HelloWorld12!@"
+
+    const VALID_EMAIL = "bala"
+    const VALID_PASSWORD = "bala"
 
     const onHandleSubmit = (e) => {
         e.preventDefault();

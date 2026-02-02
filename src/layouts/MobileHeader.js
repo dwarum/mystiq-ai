@@ -68,7 +68,7 @@ const MobileHeader = ({ logo, className, headerClass }) => {
                     </Link>
                   </li>
                   <li className="menu-item">
-                    <Link href="/service-1">
+                    <Link href="/service">
                       <a onClick={() => setToggle(false)}>SERVICES</a>
                     </Link>
                   </li>
