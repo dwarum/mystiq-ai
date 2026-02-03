@@ -6,8 +6,8 @@ const PageBanner = ({ pageTitle, pageName }) => {
       <div
         className="breadcrumbs-wrapper bg_cover"
         style={{
-          backgroundImage: "url(assets/images/bg/hero-internal2.jpg)",
-          minHeight: "500px", // Adjust this value to match your desired height
+          backgroundImage: "url(assets/images/bg/hero-employee.jpg)",
+          minHeight: "300px", // Adjust this value to match your desired height
           display: "flex",
           alignItems: "center",
           justifyContent: "center"

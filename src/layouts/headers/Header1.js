@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import MobileHeader from "../MobileHeader";
 import MainMenu from "./MainMenu";
 import EmployeeLoginModal from "../../components/EmployeeLoginModal";
@@ -7,6 +8,21 @@ import EmployeeLoginModal from "../../components/EmployeeLoginModal";
 const Header1 = () => {
   const [showSearchModal, setShowSearchModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const router = useRouter();
+  const isEmployeePage = router.pathname === "/employee-info";
+
+  useEffect(() => {
+    // Check if user is logged in
+    const loggedIn = sessionStorage.getItem("isLoggedIn");
+    setIsLoggedIn(loggedIn === "true");
+  }, []);
+
+  const handlePortalClick = (e) => {
+    e.preventDefault();
+    router.push("/employee-info");
+  };
+
   return (
     <Fragment>
       <header className="theme-header d-xl-block d-none">
@@ -66,20 +82,24 @@ const Header1 = () => {
               </div>
               <div className="header-right-nav">
                 <ul>
-                  <li className="cart-item">
-                    
-                  </li>
-                  <li className="lang-dropdown">
-                    
-                  </li>
-                  <li className="nav-button">
-                      <a className="main-btn" onClick = {(e) => {
+                  {/* Only show button if NOT on employee-info page */}
+                  {!isEmployeePage && (
+                    <li className="nav-button">
+                      {isLoggedIn ? (
+                        <a className="main-btn" onClick={handlePortalClick}>
+                          Portal
+                        </a>
+                      ) : (
+                        <a className="main-btn" onClick={(e) => {
                           e.preventDefault();
                           setShowLoginModal(true);
                         }}>
-                        Employee Login
-                      </a>
-                  </li>
+                          Login
+                        </a>
+                      )}
+                    </li>
+                  )}
+                  
                   <li className="navbar-toggle-btn">
                     <div className="navbar-toggler">
                       <span />

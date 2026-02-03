@@ -639,11 +639,22 @@ select:focus {
   padding-top: 80px !important; /* Reduced from default ~130px */
 }
 
-.employee-info-card {
+/* .employee-info-card {
   background: white;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+} */
+
+.employee-info-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 30px;
+  max-width: 1200px; /* Increase from default */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .employee-info-card .card-header {

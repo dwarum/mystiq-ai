@@ -97,7 +97,7 @@ const MobileHeader = ({ logo, className, headerClass }) => {
                       setShowLoginModal(true);
                     }}
                   >
-                    Employee Login
+                    Login
                   </a>
                 </li>
                 <li className="navbar-toggle-btn">
