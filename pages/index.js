@@ -36,10 +36,10 @@ const Index = () => {
                 <div className="col-lg-8">
                   <div className="hero-content text-center">
                     <span className="sub-title text-underline">
-                      Beyond Consulting. Dedicated Teams.
+                      Beyond Consulting
                     </span>
                     <h1>
-                      Your Dedicated Technology Partner for AI, Blockchain & Cloud Transformation
+                      Engineering AI Solutions for Modern Enterprises
                     </h1>
                   </div>
                 </div>
