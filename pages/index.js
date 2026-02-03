@@ -35,9 +35,9 @@ const Index = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-8">
                   <div className="hero-content text-center">
-                    <span className="sub-title text-underline">
+                    {/* <span className="sub-title text-underline">
                       Beyond Consulting
-                    </span>
+                    </span> */}
                     <h1>
                       Engineering AI Solutions for Modern Enterprises
                     </h1>
