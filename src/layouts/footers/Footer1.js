@@ -107,7 +107,7 @@ const Footer1 = ({ bg, className, logo }) => {
                 <ul className="footer-nav">
                   <li>
                     <i className="far fa-envelope" />
-                    <a href="mailto:info@mystiq.ai">info@mystiq.ai</a>
+                    <a href="mailto:info@mystiq.ai">contact-us@mystiq.ai</a>
                   </li>
                   <li style={{ marginTop: '10px' }}>
                     5600 S Quebec St Ste <br/>
