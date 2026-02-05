@@ -6,6 +6,60 @@ import Header1 from "../src/layouts/headers/Header1";
 import Footer1 from "../src/layouts/footers/Footer1";
 import Accordion from "../src/components/accordion/Accordion";
 
+
+export async function getServerSideProps(context) {
+  // Get client IP
+  const forwarded = context.req.headers['x-forwarded-for'];
+  const realIP = context.req.headers['x-real-ip'];
+  const socketIP = context.req.socket.remoteAddress;
+  const ip = forwarded ? forwarded.split(',')[0].trim() : (realIP || socketIP || '');
+  
+  console.log('🔍 Employee-info access from IP:', ip);
+  
+  // Check if VPN IP (100.64.0.0/10 range)
+  function isVPNIP(ip) {
+    if (!ip) return false;
+    
+    // Clean up IPv6-mapped IPv4 addresses
+    let cleanIP = ip;
+    if (ip.startsWith('::ffff:')) {
+      cleanIP = ip.replace('::ffff:', '');
+    }
+    
+    
+    const parts = cleanIP.split('.');
+    if (parts.length !== 4) return false;
+    
+    const firstOctet = parseInt(parts[0]);
+    const secondOctet = parseInt(parts[1]);
+    
+    // Tailscale range: 100.64.0.0 to 100.127.255.255
+    if (firstOctet === 100 && secondOctet >= 64 && secondOctet <= 127) {
+      console.log('✅ Tailscale VPN IP detected');
+      return true;
+    }
+    
+    return false;
+  }
+  
+  // Block if not on VPN
+  if (!isVPNIP(ip)) {
+    console.log('❌ Access denied - Not on VPN');
+    return {
+      redirect: {
+        destination: '/vpn-required',
+        permanent: false,
+      },
+    };
+  }
+  
+  console.log('✅ Access granted - VPN verified');
+  
+  return {
+    props: {},
+  };
+}
+
 const EmployeeInfo = () =>{
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoading, setIsLoading] = useState(true);

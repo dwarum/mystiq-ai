@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/employee-info.js"
     ],
-    "/service": [
+    "/vpn-required": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/service.js"
+      "static/chunks/pages/vpn-required.js"
     ]
   },
   "ampFirstPages": []
