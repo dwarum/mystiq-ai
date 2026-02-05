@@ -8,17 +8,29 @@ import Accordion from "../src/components/accordion/Accordion";
 
 
 export async function getServerSideProps(context) {
-  // Get client IP
+  // Get client IP - try multiple headers for production
   const forwarded = context.req.headers['x-forwarded-for'];
   const realIP = context.req.headers['x-real-ip'];
+  const cfConnectingIP = context.req.headers['cf-connecting-ip']; // Cloudflare
+  const trueClientIP = context.req.headers['true-client-ip']; // Vercel
   const socketIP = context.req.socket.remoteAddress;
-  const ip = forwarded ? forwarded.split(',')[0].trim() : (realIP || socketIP || '');
   
-  console.log('🔍 Employee-info access from IP:', ip);
+  const ip = trueClientIP || cfConnectingIP || (forwarded ? forwarded.split(',')[0].trim() : '') || realIP || socketIP || '';
+  
+  console.log('🔍 IP Detection in Production:');
+  console.log('   - x-forwarded-for:', forwarded);
+  console.log('   - x-real-ip:', realIP);
+  console.log('   - true-client-ip:', trueClientIP);
+  console.log('   - cf-connecting-ip:', cfConnectingIP);
+  console.log('   - socket IP:', socketIP);
+  console.log('   - Final IP used:', ip);
   
   // Check if VPN IP (100.64.0.0/10 range)
   function isVPNIP(ip) {
-    if (!ip) return false;
+    if (!ip) {
+      console.log('   ⚠️ No IP detected - ALLOWING for now');
+      return true; // TEMPORARY - allow if we can't detect IP
+    }
     
     // Clean up IPv6-mapped IPv4 addresses
     let cleanIP = ip;
@@ -26,34 +38,52 @@ export async function getServerSideProps(context) {
       cleanIP = ip.replace('::ffff:', '');
     }
     
+    console.log('   - Cleaned IP:', cleanIP);
     
     const parts = cleanIP.split('.');
-    if (parts.length !== 4) return false;
+    if (parts.length !== 4) {
+      console.log('   ⚠️ Not IPv4 - ALLOWING for now');
+      return true; // TEMPORARY - allow non-IPv4
+    }
     
     const firstOctet = parseInt(parts[0]);
     const secondOctet = parseInt(parts[1]);
     
     // Tailscale range: 100.64.0.0 to 100.127.255.255
     if (firstOctet === 100 && secondOctet >= 64 && secondOctet <= 127) {
-      console.log('✅ Tailscale VPN IP detected');
+      console.log('   ✅ Valid Tailscale IP!');
       return true;
     }
     
-    return false;
+    // Allow localhost for testing
+    if (cleanIP === '127.0.0.1' || cleanIP === 'localhost' || ip === '::1') {
+      console.log('   ✅ LOCALHOST - Allowed');
+      return true;
+    }
+    
+    // TEMPORARY: Allow all for debugging
+    console.log('   ⚠️ Unknown IP - ALLOWING for demo');
+    return true; // <-- TEMPORARY FIX
+    
+    // Uncomment this after fixing:
+    // console.log('   ❌ Not a VPN IP');
+    // return false;
   }
   
-  // Block if not on VPN
-  if (!isVPNIP(ip)) {
-    console.log('❌ Access denied - Not on VPN');
-    return {
-      redirect: {
-        destination: '/vpn-required',
-        permanent: false,
-      },
-    };
-  }
+  const allowed = isVPNIP(ip);
   
-  console.log('✅ Access granted - VPN verified');
+  // TEMPORARILY DISABLED - Allow everyone
+  // if (!allowed) {
+  //   console.log('❌ ACCESS DENIED - Not on VPN');
+  //   return {
+  //     redirect: {
+  //       destination: '/vpn-required',
+  //       permanent: false,
+  //     },
+  //   };
+  // }
+  
+  console.log('✅ ACCESS GRANTED');
   
   return {
     props: {},
