@@ -20,7 +20,7 @@ const About = () => {
                   <h2>Who We Are</h2>
                 </div>
                 <p className="mb-20">
-                  Mystiq Labs is a technology solutions firm that delivers what others only promise: complete ownership from strategy to deployment. We don't staff your projects with individual consultants—we provide dedicated, cross-functional teams that architect, build, and deploy enterprise solutions in AI/ML, blockchain, cloud modernization, and cybersecurity.
+                  Since 2019, Mystiq Labs hs been delivering what others only promise: complete ownership from strategy to deployment. We don't staff your projects with individual consultants—we provide dedicated, cross-functional teams that architect, build, and deploy enterprise solutions in AI/ML, blockchain, cloud modernization, and cybersecurity.
                 </p>
                 <p>
                   Founded on the belief that transformative technology requires more than advisory services, we partner with forward-thinking organizations in finance, AI startups, and DeFi to turn complex challenges into competitive advantages.
