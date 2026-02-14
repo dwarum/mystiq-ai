@@ -34,30 +34,33 @@ const About = () => {
 
       {/*====== Start Our Story Section ======*/}
       <section className="fancy-about light-gray-bg pt-120 pb-120">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <div className="section-title text-center mb-50 wow fadeInUp">
-                <span className="sub-title red-dark text-underline">
-                  Our Story
-                </span>
-                <h2>Why Mystiq Labs Exists</h2>
-              </div>
-              <div className="story-content wow fadeInUp">
-                <p className="mb-25">
-                  The consulting industry has a fundamental problem: businesses hire experts for advice, then struggle to execute that advice with fragmented teams and contractors who lack context, commitment, or accountability.
-                </p>
-                <p className="mb-25">
-                  We founded Mystiq Labs to bridge this gap. Instead of providing strategy decks and staffing recommendations, we deliver integrated teams that own the entire journey—from initial architecture through deployment and optimization. Our clients don't need more consultants telling them what to do; they need partners who roll up their sleeves and do it with them.
-                </p>
-                <p>
-                  This approach emerged from years of watching promising projects fail not because of bad strategy, but because of fractured execution. We built Mystiq Labs to be the firm we wished existed: one that treats implementation as seriously as ideation, and measures success by deployed solutions, not billable hours.
-                </p>
-              </div>
-            </div>
-          </div>
+  <div className="container">
+    <div className="row justify-content-center">
+      <div className="col-lg-10">
+        <div className="section-title text-center mb-50 wow fadeInUp">
+          <span className="sub-title red-dark text-underline">
+            Our Story
+          </span>
+          <h2>Building on a Foundation of Excellence</h2>
         </div>
-      </section>
+        <div className="story-content wow fadeInUp">
+          <p className="mb-25">
+            Mystiq Labs is the successor operating company to Dwarum Inc., a U.S. corporation established in 2019. From 2019 through 2024, client engagements and consulting operations were conducted under Dwarum Inc.
+          </p>
+          <p className="mb-25">
+            In 2024, recognizing the transformative impact of AI on business operations,the organization evolved its focus toward advanced AI-driven solutions. Mystiq Labs was formally established in 2025 as the primary legal and operating entity, continuing the client relationships, expertise that have defined our work since 2019.
+          </p>
+          <p className="mb-25">
+            This evolution wasn't just a rebrand—it represented a fundamental shift in how we serve clients. The consulting industry has a persistent problem: businesses hire experts for advice, then struggle to execute that advice with fragmented teams and contractors who lack context, commitment, or accountability.
+          </p>
+          <p>
+            Today, Mystiq Labs combines proven business expertise with cutting-edge AI capabilities. We don't provide strategy decks and staffing recommendations—we deliver integrated teams that own the entire journey from initial architecture through deployment and optimization. We built Mystiq Labs to be the firm we wished existed: one that treats implementation as seriously as ideation, and measures success by deployed solutions, not billable hours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/*====== End Our Story Section ======*/}
 
       {/*====== Start Our Approach Section ======*/}
