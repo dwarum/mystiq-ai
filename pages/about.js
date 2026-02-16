@@ -45,10 +45,10 @@ const About = () => {
         </div>
         <div className="story-content wow fadeInUp">
           <p className="mb-25">
-            Mystiq Labs is the successor operating company to Dwarum Inc., a U.S. corporation established in 2019. From 2019 through 2024, client engagements and consulting operations were conducted under Dwarum Inc.
+            Mystiq Labs traces its origins to Dwarum Inc., a U.S. corporation established in 2019. From 2019 through 2024, consulting and client engagements were conducted under Dwarum Inc., with operations progressively expanding under the Mystiq Labs brand as the organization evolved toward advanced AI-driven solutions.
           </p>
           <p className="mb-25">
-            In 2024, recognizing the transformative impact of AI on business operations,the organization evolved its focus toward advanced AI-driven solutions. Mystiq Labs was formally established in 2025 as the primary legal and operating entity, continuing the client relationships, expertise that have defined our work since 2019.
+            In 2025, Mystiq Labs was formally incorporated as the primary legal and operating entity, continuing the expertise, client relationships, and technical foundation developed since 2019.
           </p>
           <p className="mb-25">
             This evolution wasn't just a rebrand—it represented a fundamental shift in how we serve clients. The consulting industry has a persistent problem: businesses hire experts for advice, then struggle to execute that advice with fragmented teams and contractors who lack context, commitment, or accountability.

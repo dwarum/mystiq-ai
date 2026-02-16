@@ -146,7 +146,7 @@ const Index = () => {
                   </h2>
                 </div>
                 <p>
-                  Founded in 2019 as Dwarum Inc. and operating as Mystiq Labs since 2025, we deliver enterprise solutions with a simple insight: businesses don't need more individual consultants—they need dedicated teams that take full ownership of implementation. We specialize in AI/ML solutions, agentic AI systems, blockchain innovation, cloud modernization, and cybersecurity for forward-thinking organizations in finance, AI startups, and DeFi.
+                  Founded in 2019 as Dwarum Inc., the organization expanded its operations under the Mystiq Labs brand and formally incorporated Mystiq Labs in 2025. We deliver enterprise solutions built on a simple principle: businesses don’t need isolated consultants — they need dedicated teams that take full ownership of implementation. We specialize in AI/ML solutions, agentic AI systems, blockchain innovation, cloud modernization, and cybersecurity for forward-thinking organizations in finance, AI startups, and DeFi.
                 </p>
                 <p>
                   Our approach is different. Instead of staffing your team with contractors, we provide integrated, cross-functional squads that architect, develop, and deploy complete solutions. From day one to deployment and beyond, we're partners in your success—not just advisors on the sideline.

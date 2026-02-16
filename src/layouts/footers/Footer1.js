@@ -125,7 +125,7 @@ const Footer1 = ({ bg, className, logo }) => {
             <div className="col-md-6">
               <div className="text">
                 <p style={{fontSize:'14px'}}>
-                  Copyright © 2025 Mystiq Labs (successor to Dwarum Inc., est. 2019). All Rights Reserved
+                  Copyright © 2025 Mystiq Labs. Established 2019. All Rights Reserved
                 </p>
               </div>
             </div>
